@@ -64,6 +64,25 @@ body {
 
 
 /* Stats Grid */
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -163,11 +182,11 @@ body {
 }
 
 .start-session-btn {
-    background-color: var(--primary-color);
+    background-color: lightgreen;
     color: var(--light-text);
     padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
+    border: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1.1em;
     font-weight: 600;
@@ -178,7 +197,7 @@ body {
 }
 
 .start-session-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: darkgrey;
     transform: translateY(-2px);
 }
 
@@ -350,4 +369,49 @@ body {
     body {
         padding: 10px;
     }
+}
+/* 
+.pc-group {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 20px;
+} */
+
+/* Style for the computer cards */
+#computer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.computer-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 16px;
+  margin: 12px;
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.computer-card p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: rgb(34, 34, 34)
+}
+
+.computer-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.computer-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  color: #333;
 }
